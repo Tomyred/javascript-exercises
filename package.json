@@ -1,0 +1,17 @@
+{
+  "name": "curso-javascript",
+  "version": "1.0.0",
+  "description": "curso de javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/patito.js",
+    "prueba": "node src/prueba.js"
+  },
+  "author": "Tomás Rojo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "uniqid": "^5.4.0"
+  }
+}
