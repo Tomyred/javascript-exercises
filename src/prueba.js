@@ -25,19 +25,7 @@ let usuarios = {
     },
 };
 
-function cuantosOnline(users) {
-    let onlineUsers = 0;
-
-    for (index in users) {
-        const user = users[index];
-
-        if (user.online === true) {
-            onlineUsers++;
-        }
-    }
-
-    return onlineUsers;
-}
+function cuantosOnline(users) {}
 
 function divisores(numero) {
     // La funcion llamada 'divisores' recibe como argumento un numero (entero)
@@ -48,21 +36,6 @@ function divisores(numero) {
     // divisores(15) devuelve [3, 5]
     // divisores(11) devuelve 'Es primo'
     // Tu código aca:
-
-    const dividers = [];
-
-    for (let i = 0; i <= numero; i++) {
-        const result = numero % i;
-        if (result === 0 && !(i === 1) && !(i === numero)) {
-            dividers.push(i);
-        }
-    }
-
-    if (dividers.length === 0) {
-        return "Es primo";
-    } else {
-        return dividers;
-    }
 }
 
 function palabraMasLarga(array) {
@@ -71,17 +44,6 @@ function palabraMasLarga(array) {
     // Por ej:
     // palabraMasLarga(['hola esto string', 'frase con palabra']) debe devolver 'palabra'
     // Tu código aca:
-    let palabraLarga = "";
-    for (frase of array) {
-        const palabras = frase.split(" ");
-        for (palabra of palabras) {
-            if (palabra.length > palabraLarga.length) {
-                palabraLarga = palabra;
-            }
-        }
-    }
-
-    return palabraLarga;
 }
 
 function crearClaseEmprendedor() {
